@@ -19,5 +19,7 @@ from mainsite import views as mblog_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',mblog_views.index),
+    path('',mblog_views.homepage),
+    path('homepage1/',mblog_views.homepage1),
+    path('homepage1/post/<slug>',mblog_views.showpost),
 ]
