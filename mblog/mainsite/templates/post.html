@@ -1,15 +1,15 @@
 {% extends 'base.html' %}
 {% block title %}
-{{ post.title }} -- 天地
+    {{ post.title }} -- 天地
 {% endblock %}
 {% block headmessage %}
-<h3 style="font-family: 微软雅黑;">{{ post.title }}</h3>
+    <h3 style="font-family: 微软雅黑;">{{ post.title }}</h3>
     <a style="font-family: 微软雅黑;" href="../">放回首页</a>
 {% endblock %}
 {% block content %}
-<p>
-    {{ post.body }}
-</p>
+    <p>
+        {{ post.body }}
+    </p>
 {% endblock %}
 <!--
 <!DOCTYPE html>
