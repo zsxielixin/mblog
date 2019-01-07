@@ -1,3 +1,18 @@
+<!-- index.html -->
+{% extends 'base.html' %}
+{% block title %}
+欢迎光临我的博客
+{% endblock %}
+{% block headmessage %}
+<h3 style="font-family: 微软雅黑;"> 本站文章列表 </h3>{% endblock %}
+{% block content %}
+{% for post in posts %}
+    <p>
+        <a href="/homepage1/post/{{ post.slug }}">{{ post.title }}</a>
+        </p>
+   {% endfor %}
+{% endblock %}
+<!--
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,15 +34,12 @@
         {{ post.body }}
     </p>
     {% endfor %}
-
     {% for post in posts %}
         <p>
         <a href="/homepage1/post/{{ post.slug }}">{{ post.title }}</a>
         </p>
-
     {% endfor %}
-
     <hr>
-
 </body>
 </html>
+-->
